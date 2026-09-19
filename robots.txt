@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://image-resizer-h4nk1f32u-saqib-7ff6.vercel.app/sitemap.xml
