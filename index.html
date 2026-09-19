@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>Image Compressor Online - Reduce Image File Size for Free</title>
+  <meta name="title" content="Image Compressor Online - Reduce Image File Size for Free">
+  <meta name="description" content="Compress JPG, PNG and WEBP images online for free. Reduce file size without losing quality, compare before and after results, and download compressed images instantly.">
+  <meta name="keywords" content="image compressor, compress image online, reduce image size, compress jpg, compress png, compress webp, free image compressor, lossless compression, photo size reducer">
+  <meta name="author" content="ImageCompressor">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://imagecompressor.local/">
+  <meta property="og:title" content="Image Compressor Online - Reduce Image File Size for Free">
+  <meta property="og:description" content="Compress JPG, PNG and WEBP images online for free. Reduce file size without losing quality, compare before and after results, and download compressed images instantly.">
+  <meta property="og:image" content="assets/favicon.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Image Compressor Online - Reduce Image File Size for Free">
+  <meta property="twitter:description" content="Compress JPG, PNG and WEBP images online for free. Reduce file size without losing quality, compare before and after results, and download compressed images instantly.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#059669">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-top-right"></div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="ImageCompressor Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Compression arrows inward -->
+            <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+            <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+            <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+          </svg>
+        </div>
+        <span>ImageCompressor</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#compress" class="nav-link">Compress Image</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="nav-cta">
+        <a href="#compress" class="btn btn-primary btn-sm">Compress Image</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#compress" class="mobile-nav-link">Compress Image</a></li>
+      <li><a href="#features" class="mobile-nav-link">Features</a></li>
+      <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      <li><a href="#privacy" class="mobile-nav-link">Privacy</a></li>
+    </ul>
+    <a href="#compress" class="btn btn-primary" style="width: 100%;">Compress Image Now</a>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Lightning Fast • Client-Side Only
+          </div>
+
+          <h1 class="hero-title">
+            Compress Images Online <br>
+            <span class="gradient-text">in Seconds</span>
+          </h1>
+
+          <p class="hero-description">
+            Reduce JPG, PNG and WEBP file size without losing quality — quickly, easily, and completely free.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#compress" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+                <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+                <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+              </svg>
+              Compress Image
+            </a>
+            <a href="#how-it-works" class="btn btn-secondary btn-lg">
+              Learn How It Works
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>100% browser-based • No upload required • Free to use</span>
+          </div>
+        </div>
+
+        <!-- Right Side Visual Mockup Card -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <!-- Floating Badge Top Left -->
+            <div class="floating-badge badge-top-left">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span>3.4 MB → 680 KB</span>
+            </div>
+
+            <!-- Mockup Window Header -->
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mockup-badge">Optimization Complete</div>
+            </div>
+
+            <!-- Mockup Visual Display -->
+            <div class="mockup-image-box">
+              <svg class="bg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="compMockGrad" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#059669" stop-opacity="0.12"/>
+                    <stop offset="1" stop-color="#4F46E5" stop-opacity="0.2"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="240" rx="8" fill="url(#compMockGrad)"/>
+                <circle cx="200" cy="90" r="40" fill="#059669" fill-opacity="0.15"/>
+                <path d="M80 190L160 110L240 190" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M210 190L260 140L320 190" stroke="#4F46E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="130" y="55" width="140" height="50" rx="8" fill="white" fill-opacity="0.85" stroke="#E2E8F0"/>
+                <text x="200" y="85" font-family="system-ui" font-size="14" font-weight="bold" fill="#059669" text-anchor="middle">80% Smaller</text>
+              </svg>
+            </div>
+
+            <!-- Floating Badge Bottom Right -->
+            <div class="floating-badge badge-bottom-right">
+              <span class="badge-pill-save">-80% Size</span>
+              <span>Ultra Crisp</span>
+            </div>
+
+            <!-- Mockup Footer Stats -->
+            <div class="mockup-footer">
+              <span>Smart Canvas Compression</span>
+              <span><strong>Pristine Quality</strong></span>
+            </div>
+            <div class="mockup-meter">
+              <div class="mockup-meter-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MAIN IMAGE COMPRESSOR TOOL SECTION
+         ========================================== -->
+    <section class="compressor-section" id="compress">
+      <div class="container compressor-container">
+        <div class="section-header">
+          <div class="badge">Online Tool</div>
+          <h2 class="section-title">Compress Your Image</h2>
+          <p class="section-subtitle">
+            Upload an image, choose your compression level, and download the optimized result.
+          </p>
+        </div>
+
+        <div class="tool-card">
+          <!-- Hidden Native File Input -->
+          <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" style="display: none;">
+
+          <!-- UPLOAD DROPZONE -->
+          <div class="upload-dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload an image to compress">
+            <div class="upload-icon-circle">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <h3>Drag & drop your image here</h3>
+            <div class="divider-or">or</div>
+            <button type="button" class="btn btn-primary" id="chooseFileBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              Choose Image
+            </button>
+            <div class="supported-types">Supported: JPG, PNG, WEBP</div>
+            <div class="paste-hint">Tip: You can also paste directly with <kbd>Ctrl+V</kbd> or <kbd>Cmd+V</kbd></div>
+          </div>
+
+          <!-- EDITOR WORKSPACE (Shown after upload) -->
+          <div class="editor-workspace" id="editorWorkspace">
+            <!-- Image Information Bar -->
+            <div class="image-info-bar">
+              <div class="info-file-details">
+                <img id="infoThumb" class="info-thumb" src="" alt="Thumbnail preview">
+                <div class="info-meta">
+                  <h4 id="infoFileName">filename.jpg</h4>
+                  <div class="info-chips">
+                    <span class="info-chip" id="infoOriginalDim">1920 × 1080 px</span>
+                    <span class="info-chip chip-size" id="infoOriginalSize">2.4 MB</span>
+                    <span class="info-chip" id="infoOriginalType">JPG</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-actions">
+                <button type="button" class="btn btn-outline btn-sm" id="changeImageBtn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                  </svg>
+                  Change Image
+                </button>
+              </div>
+            </div>
+
+            <!-- Two-Column Workspace Layout -->
+            <div class="editor-layout">
+              <!-- Left Column: Canvas Preview Viewport -->
+              <div class="editor-preview-column">
+                <div class="preview-viewport">
+                  <img id="canvasPreview" src="" alt="Image editor preview">
+                  <div class="preview-dimension-tag" id="previewDimTag">1920 × 1080 px</div>
+                </div>
+              </div>
+
+              <!-- Right Column: Compression Controls -->
+              <div class="editor-controls-column">
+                <!-- Compression Presets -->
+                <div>
+                  <div class="control-group-title">
+                    <span>Compression Level</span>
+                  </div>
+
+                  <div class="compression-presets-grid">
+                    <!-- Preset: Balanced -->
+                    <button type="button" class="compression-preset-btn active" data-preset="balanced">
+                      <div class="preset-title">
+                        <span>Balanced</span>
+                        <span class="preset-badge">Recommended</span>
+                      </div>
+                      <div class="preset-desc">Optimal ~75% quality. High file size savings with great clarity.</div>
+                    </button>
+
+                    <!-- Preset: Maximum -->
+                    <button type="button" class="compression-preset-btn" data-preset="max">
+                      <div class="preset-title">
+                        <span>Maximum</span>
+                        <span class="preset-badge" style="background:#fef3c7; color:#d97706;">Smallest</span>
+                      </div>
+                      <div class="preset-desc">Aggressive ~45% reduction. Best for strict upload size limits.</div>
+                    </button>
+
+                    <!-- Preset: High Quality -->
+                    <button type="button" class="compression-preset-btn" data-preset="high">
+                      <div class="preset-title">
+                        <span>High Quality</span>
+                        <span class="preset-badge" style="background:#e0f2fe; color:#0284c7;">Lossless feel</span>
+                      </div>
+                      <div class="preset-desc">Gentle ~90% compression for high-res photography.</div>
+                    </button>
+
+                    <!-- Preset: Custom -->
+                    <button type="button" class="compression-preset-btn" data-preset="custom">
+                      <div class="preset-title">
+                        <span>Custom</span>
+                        <span class="preset-badge" style="background:#f1f5f9; color:#475569;">Manual</span>
+                      </div>
+                      <div class="preset-desc">Fine-tune the exact quality slider and scaling settings.</div>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Quality Slider -->
+                <div class="quality-control" id="qualityContainer">
+                  <div class="control-group-title">
+                    <span>Quality Level</span>
+                    <span id="qualityVal" class="quality-value">75%</span>
+                  </div>
+                  <div class="slider-container">
+                    <input type="range" id="qualitySlider" class="quality-slider" min="5" max="100" value="75">
+                  </div>
+                  <div class="quality-note" id="qualityNote">
+                    Optimal balance between high byte savings and pristine clarity
+                  </div>
+                </div>
+
+                <!-- Resolution Optimizer (Optional Rescale) -->
+                <div>
+                  <div class="control-group-title">
+                    <span>Max Resolution (Scale Down)</span>
+                  </div>
+                  <select id="maxDimensionSelect" class="select-styled" aria-label="Max resolution constraint">
+                    <option value="0">Original Resolution (No downscaling)</option>
+                    <option value="1920">Full HD (Max 1920px width/height)</option>
+                    <option value="1280">Standard HD (Max 1280px width/height)</option>
+                    <option value="800">Web Compact (Max 800px width/height)</option>
+                  </select>
+                </div>
+
+                <!-- Output Format Selector -->
+                <div>
+                  <div class="control-group-title">Output Format</div>
+                  <div class="format-segmented">
+                    <button type="button" class="format-btn active" data-format="auto">Auto (Original)</button>
+                    <button type="button" class="format-btn" data-format="image/webp">WEBP (Smallest)</button>
+                    <button type="button" class="format-btn" data-format="image/jpeg">JPG</button>
+                    <button type="button" class="format-btn" data-format="image/png">PNG</button>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="editor-actions">
+                  <button type="button" class="btn btn-secondary" id="resetBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                      <path d="M21 3v5h-5"/>
+                      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                      <path d="M8 16H3v5"/>
+                    </svg>
+                    Reset
+                  </button>
+                  <button type="button" class="btn btn-primary" id="compressBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+                      <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+                      <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+                    </svg>
+                    Compress Image
+                  </button>
+                  <button type="button" class="btn btn-success" id="downloadBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Image
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==========================================
+                 BEFORE / AFTER PREVIEW SECTION
+                 ========================================== -->
+            <div class="comparison-section" id="comparisonSection">
+              <div class="comparison-header">
+                <h3>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Compression Complete — Before & After Comparison
+                </h3>
+                <button type="button" class="btn btn-success btn-sm" id="compDownloadBtn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Compressed Image
+                </button>
+              </div>
+
+              <div class="comparison-grid">
+                <!-- Before Card -->
+                <div class="comparison-card">
+                  <div class="comparison-card-top">
+                    <span class="comparison-tag tag-before">BEFORE</span>
+                    <span class="comparison-meta-size" id="compBeforeSize">2.4 MB</span>
+                  </div>
+                  <div class="comparison-img-wrapper">
+                    <img id="compBeforeImg" src="" alt="Original image before compression">
+                  </div>
+                  <div class="comparison-details">
+                    <span class="comparison-meta-dim" id="compBeforeDim">1920 × 1080 px</span>
+                    <span style="font-size: 0.8rem; color: var(--text-light);">Original File</span>
+                  </div>
+                </div>
+
+                <!-- After Card -->
+                <div class="comparison-card after-card">
+                  <div class="comparison-card-top">
+                    <span class="comparison-tag tag-after">AFTER</span>
+                    <span class="comparison-meta-size" id="compAfterSize">420 KB</span>
+                  </div>
+                  <div class="comparison-img-wrapper">
+                    <img id="compAfterImg" src="" alt="Compressed output image preview">
+                  </div>
+                  <div class="comparison-details">
+                    <span class="comparison-meta-dim" id="compAfterDim">1920 × 1080 px</span>
+                    <span class="comparison-savings-chip" id="compSavingsChip">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                      75% Saved!
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURES SECTION
+         ========================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Features</div>
+          <h2 class="section-title">Everything You Need to Compress Images</h2>
+          <p class="section-subtitle">
+            Engineered for speed, privacy, and maximum file size reduction directly in your browser.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-emerald">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+                <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+                <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+              </svg>
+            </div>
+            <h3>Smart Compression</h3>
+            <p>Intelligent algorithms reduce image bytes by up to 90% while keeping visuals sharp and clear.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Completely Private</h3>
+            <p>Images are processed directly in your browser and never transmitted across the network.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <h3>Multiple Formats</h3>
+            <p>Compress JPG, PNG, and modern high-efficiency WEBP formats with instant before/after previews.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-amber">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3>Custom Optimization</h3>
+            <p>Choose one-click balanced presets or dial in custom quality levels and max resolution downscaling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HOW IT WORKS SECTION
+         ========================================== -->
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Workflow</div>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            Three simple steps to compress any image in under 10 seconds.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Upload Your Image</h3>
+            <p>Drag and drop your image file, choose from your computer, or paste directly from clipboard using Ctrl+V.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Choose Compression Level</h3>
+            <p>Pick Balanced (Recommended), Maximum, High Quality, or customize the quality slider and resolution limits.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Download Smaller Image</h3>
+            <p>Check the before and after comparison, view your file size savings percentage, and download instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         USE CASES SECTION
+         ========================================== -->
+    <section class="use-cases-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Purposes</div>
+          <h2 class="section-title">Compress Images for Any Purpose</h2>
+          <p class="section-subtitle">
+            Dramatically shrink image file size for web, communications, and storage.
+          </p>
+        </div>
+
+        <div class="use-cases-grid">
+          <!-- Card 1 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>Websites & SEO</h3>
+              <p>Accelerate website loading speeds and boost Google Core Web Vitals with lightweight images.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>Email Attachments</h3>
+              <p>Shrink large photo attachments to stay comfortably under standard 20MB email limits.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>Discord & Slack Limits</h3>
+              <p>Fit your screenshots and photos under Discord (8MB/25MB) and Slack upload thresholds.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>E-commerce Stores</h3>
+              <p>Speed up product galleries on Shopify and WooCommerce to reduce bounce rates and increase sales.</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>Mobile Storage Saver</h3>
+              <p>Free up gigabytes of phone storage by converting huge camera photos into efficient compact files.</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div class="use-case-content">
+              <h3>Documents & PDF Reports</h3>
+              <p>Embed optimized images into presentation slides and Word/PDF reports without ballooning file sizes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         WHY USE IMAGE COMPRESSOR
+         ========================================== -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Advantages</div>
+          <h2 class="section-title">Why Use ImageCompressor</h2>
+          <p class="section-subtitle">
+            Built as a modern, transparent tool that respects your time and privacy.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>No registration</h3>
+            <p>Start compressing immediately. No accounts, logins, credit cards, or spam emails required.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>No software installation</h3>
+            <p>Access the full compression suite straight from your web browser without downloading heavy software.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>No server upload</h3>
+            <p>Your photos stay 100% on your device. Client-side browser computing ensures zero data leakage.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>Fast processing</h3>
+            <p>Harnesses your local browser's hardware acceleration for near-instantaneous image compression.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>Free to use</h3>
+            <p>Enjoy unlimited image compression with full functionality, zero hidden fees, and no watermarks.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>Works on desktop and mobile</h3>
+            <p>Smooth responsive experience crafted carefully for smartphones, tablets, and desktop displays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PRIVACY SECTION
+         ========================================== -->
+    <section class="privacy-section" id="privacy">
+      <div class="container">
+        <div class="privacy-banner">
+          <div class="privacy-content">
+            <h2>Your Images Stay Private</h2>
+            <p>
+              Your images are processed directly in your browser. They are not uploaded to our servers.
+              Unlike cloud-based tools that send your photos across the internet, ImageCompressor compresses everything locally on your device.
+            </p>
+            <div class="privacy-badges">
+              <div class="privacy-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                Zero Server Uploads
+              </div>
+              <div class="privacy-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                100% Client-Side
+              </div>
+              <div class="privacy-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                </svg>
+                No Data Tracking
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-icon-large">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ SECTION
+         ========================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <div class="badge">FAQ</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Find answers to common questions about ImageCompressor and browser-based compression.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Is ImageCompressor free to use?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, ImageCompressor is 100% free with unlimited image compressions. There are no paywalls, accounts, subscriptions, or watermarks added to your photos.</p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do I need to create an account?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>No account or registration is required. You can simply open the website, drop your image, select a compression level, and download immediately.</p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Are my images uploaded to any server?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>No. Your images never leave your computer or phone. All compression processes run locally within your browser using the HTML5 Canvas API and WebAssembly.</p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Which image formats are supported?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>We support JPG / JPEG, PNG (including transparency), and modern WEBP images. You can keep the original format or export as WEBP for maximum compression efficiency.</p>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How much file size can I save?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>Depending on the original file format and chosen compression level, you will typically save between 60% and 90% of file size while maintaining pristine visual quality.</p>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Will compression noticeably reduce image quality?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>Our Balanced preset uses perceptual quantization to strip unneeded metadata and color redundancies without causing visible blur or artifacts. You can also view the side-by-side Before/After preview before downloading.</p>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Can I use ImageCompressor on mobile devices?</span>
+              <div class="faq-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! ImageCompressor is fully responsive and operates smoothly on iOS Safari, Chrome for Android, and all modern mobile web browsers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FINAL CTA SECTION
+         ========================================== -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Compress Your Image?</h2>
+          <p>Reduce your image file sizes quickly and easily — completely free.</p>
+          <a href="#compress" class="btn btn-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+              <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+              <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+            </svg>
+            Compress Image Now
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h6m0 0l-3-3m3 3l-3 3"></path>
+                <path d="M20 12h-6m0 0l3-3m3 3l-3 3"></path>
+                <rect x="9" y="4" width="6" height="16" rx="2"></rect>
+              </svg>
+            </div>
+            <span>ImageCompressor</span>
+          </a>
+          <p>Fast, simple and private image compression.</p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#compress">Compress Image</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ImageCompressor. All rights reserved.</div>
+        <div>Processed 100% in your browser • Zero data collected</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
